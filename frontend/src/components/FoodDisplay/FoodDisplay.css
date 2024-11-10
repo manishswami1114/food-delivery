@@ -1,0 +1,36 @@
+.food-display {
+    margin-top: 30px;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+    overflow: visible; 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .food-display-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .food-display-list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+}
+@media only screen and (max-width: 479px) {
+    /* Styles for mobile phones */
+    .food-display-list{
+        display:block;
+        }
+  }
+  
